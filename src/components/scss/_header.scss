@@ -1,0 +1,118 @@
+header{
+    background-color: $principal;
+    position: sticky;
+    width: 100%;
+}
+
+#menu-container{
+    justify-content: space-between;
+}
+
+.menu-elements{
+
+    display: flex;
+    justify-content: space-between;
+
+    svg{
+        height: 18px;
+    }
+}
+
+.menu-elements{
+    
+    ul{
+        list-style: none;
+        display: flex;
+        
+        li{
+            margin-right: 1rem;
+        }
+    }
+}
+
+
+.logo{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 6px 0;
+    img{
+        width: 200px;
+    }
+}
+
+.profile-btn{
+    .btn{
+        font-size: 14px;
+        text-transform: capitalize;
+    }
+}
+
+.hamburger-btn{
+    position: relative;
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+    span{
+        display: block;
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background: white;
+        border-radius: 9px;
+        opacity: 1;
+        left: 0;
+        &:nth-child(2){
+            position: absolute;
+            top: 10px;
+        }
+        &:nth-child(3){
+            position: absolute;
+            top: 20px;
+        }
+    }
+    &.open{
+        span{
+            &:nth-child(1){
+                transform: rotate(45deg);
+                top: 10px;
+                left: 0px;
+            }
+            &:nth-child(2){
+                opacity: 0;
+            }
+            &:nth-child(3){
+                transform: rotate(135deg);
+                top: 10px;
+                left: 0px;
+            }
+        }
+    }
+}
+
+.content-menu{
+    display: flex;
+    align-items: center;
+    display: none;
+}
+
+
+@media(min-width:520px){
+    .content-menu{
+        display: flex;
+    }
+
+    .logo{
+        margin-left: 1.5rem;
+    }
+    
+    .hamburger-btn{
+        display: none;
+    }
+
+    .content-menu{
+        margin-left:auto; 
+        display: flex!important;
+        width: auto!important;
+    }
+    
+}

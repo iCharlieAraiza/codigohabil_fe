@@ -1,0 +1,51 @@
+@import 'sanitize';
+@import 'bootstrap';
+@import 'buttons';
+@import 'variables';
+
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+    color: $link-color;
+}
+
+.btn{
+    border-radius: 10px;
+}
+
+h1{font-size: $h1}
+h2{font-size: $h2}
+h3{font-size: $h3}
+h4{font-size: $h4}
+
+h1,h2,h3{color:$h-color}
+h4{color: $gris-contraste}
+
+.yellow{color:$amarillo}
+
+.btn{border-radius: 20px;}
+
+textarea:focus,input:focus,button:focus{outline:none}
+
+main{min-height: 85vh;}
+
+@media(min-width:780px){
+    h1{font-size: $h1-es}
+    h2{font-size: $h2-es}
+    h3{font-size: $h3-es}
+    h4{font-size: $h4-es}
+}
+
+@import 'header';
+
+@import 'homepage';
+
+@import 'post';
+
+@import 'category';
+
+@import 'footer';
+

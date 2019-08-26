@@ -1,0 +1,258 @@
+/*
+    Header
+*/
+
+#homepage{
+    header{
+        background-color: transparent;
+        height: 450px;
+        position: relative;
+        width: 100%;
+    }
+    section{
+        padding: 2rem 0;
+    }
+    p{
+        color: #757575;
+        line-height: 1.6rem;
+    }
+}
+
+.btn-blue{
+    background-color: #506886;
+    border-color: #888888;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.14), 0 2px 7px 0 rgba(0,0,0,0.12), 0 3px 3px -1px rgba(0,0,0,0.2);
+    &:hover{
+        background-color: #93969a;
+        border-color: #bfbebe;
+    }
+}
+
+.overlay-backgorund{
+    background: url('../../images/banner-homepage.svg') no-repeat scroll center center;
+    background-size: cover; 
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100%;
+    bottom: 0;
+    z-index: -1;
+}
+
+.content-header{
+    margin: 2rem auto;
+    
+    text-align: center;
+    h2{
+        font-size: 28px;
+        color: #fff;
+    }
+    h3{
+        font-size: 18px;
+        font-family: 'open sans';
+        font-weight: 400;
+        color: #fff;
+    }
+    .slide{
+        height: 60px;
+        overflow: hidden;
+    }
+}
+
+.h-banner-img{
+    display: none;
+    
+
+    img{
+        width: 420px;
+        margin-top:5rem;
+        float: right;
+    }
+}
+
+.card-lang{
+    background-color: $gris-claro;
+    width: 100%;
+    height: 138px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px 0 rgba(110,110,110,0.2), 0 6px 20px 0 rgba(166,166,166,0.19);
+    text-align: center;
+    margin-bottom: 1.2rem;
+    user-select: none;
+    transition: all 0.2s linear;
+    &:hover{
+        transform: scale(1.1);
+    }
+
+    img{
+        margin-top: 18px;
+        width: 58px;
+    }
+    h4{
+        font-size: 18px;
+        color: $gris-contraste;
+    }
+    
+}
+
+.section-1{
+    h2{
+        position: relative;
+    }
+    p{
+        font-size:20px;
+        color:#adafaf;
+    }
+}
+
+.last-card-lang{
+    background-color: #e6e3e3;
+    border: 1px solid gainsboro;
+}
+
+.circle-title{
+    display: block;
+    background-color: #e2dfda;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    position: absolute;
+    left: -22px;
+    z-index: -1;
+    top: -9px;
+}
+
+.section-descritpion{
+    background-color: $gris-intermedio-claro;
+}
+
+.section-2{
+    p{
+        font-size: 20px;
+    }
+    .display{
+        order: 2;
+    }
+    img{
+        max-width: 315px;
+        margin: 2rem auto;
+        display: block;
+    }
+    h2{
+        position: relative;
+        z-index: 5;
+        
+        .circle-title{
+            background-color: $amarillo;
+        }
+    }
+}
+
+.background-main-footer{
+    background-image: url('../../images/background-gray-section.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    img{
+        max-width: 350px;
+        float: right;
+    }
+}
+@media(min-width:350px){
+
+}
+
+@media(min-width:520px){
+    #homepage{
+        header{
+            background-color: transparent;
+            height: 100vh;
+            position: relative;
+            width: 100%;
+        }
+    }
+}
+
+@media(min-width:768px){
+    .content-header{
+        height: 80vh;
+        position: relative;
+        width: 100%;
+
+        .row{
+            position: absolute;
+            top: 0%;
+            width: 100%;
+        }   
+
+        h2{
+            font-size: 50px;
+        }
+        h3{
+            font-size: 22px;
+        }
+        .slide{
+            background-color: #9cabab;
+            .wrapper{
+                height: 60px;
+                animation: slide 10s linear infinite;
+            }
+        }
+    }
+
+    .section-2{
+        .display{
+            order: 0;
+        }
+    }
+}
+
+@media(min-width:992px){
+    // .content-header{
+    //     text-align: left;
+    // }
+}
+
+@media(min-width:1024px){
+    #homepage{
+        section{
+            padding: 5rem 0;
+        }
+        .logo{
+            margin-top: 1rem;
+            img{
+                width: 250px;
+            }
+        }
+    }
+
+    .content-header{
+        text-align: left;
+        .row{
+            top: 0%;
+        }
+    }
+}
+
+@media(min-width:1600px){
+    .content-header{
+        .row{
+            top: 17%;
+        }
+    }
+}
+
+
+@keyframes slide {
+    0%{margin-top: 0}
+    20%{margin-top: 0}
+    22%{margin-top: -60px;}
+    43%{margin-top: -60px;}
+    45%{margin-top: -115px}
+    64%{margin-top: -115px}
+    67%{margin-top: -172px;}
+    97%{margin-top: -172px;}
+    100%{margin-top: -0px;}
+    //100%{margin-top: 0px;}
+}

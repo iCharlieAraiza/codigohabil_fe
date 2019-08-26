@@ -1,0 +1,36 @@
+footer{
+    background-color: $principal;
+    padding: 2rem 0;
+    ul{
+        display: flex;
+        list-style: none;
+        margin: 0;
+        flex-direction: column;
+        li{
+            margin: 12px 0;
+        }
+        a{
+            color: #ffffff;
+            padding: 4px 0;
+            transition: all 0.1s linear;
+            &:hover{
+                border-bottom: 3px solid #ffffff;
+            }
+        }
+    }
+}
+
+@media(min-width:576px){
+
+    footer{
+        ul{
+            flex-direction: row;
+            li{
+                margin: 0;
+                margin-right: 2rem;
+            }
+            
+        }
+    }
+
+}

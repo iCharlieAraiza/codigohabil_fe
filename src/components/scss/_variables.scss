@@ -1,0 +1,59 @@
+/*
+    Tipos y tamaños de fuente
+*/
+
+._22{font-size: 22px}
+._24{font-size: 24px}
+._26{font-size: 26px}
+._28{font-size: 28px}
+
+@import url('https://fonts.googleapis.com/css?family=Barlow:700|Roboto:400,700');
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,h2,h3,h4{
+    font-family: 'Barlow', sans-serif;
+}
+
+$font: 16px;
+
+$h1-home: 28px;
+$h1: 32px;
+$h2: 28px;
+$h3: 24px;
+$h4: 20px;
+$font: 16px;
+
+$pre-text: 20px;
+$tag: 14px;
+
+$h1-home-es: 54px;
+$h2-home-es:48px;
+$p-home-es: 22px;
+$pre-text-es: 26px;
+
+$h1-es: 40px;
+$h2-es: 34px;
+$h3-es: 28px;
+$h4-es: 22px;
+$font-post: 18px;
+
+/*
+    Colores
+*/
+
+$principal: #7d9091;
+$gris-intermedio: #c4cecf;
+$gris-intermedio-claro: #dee4e4;
+$azul: #7ba8b5;
+$amarillo: #edb63c;
+
+$gris-contraste:#969696;
+
+$gris-claro: #f7f7f7;
+
+$h-color: #424c4f;
+
+$link-color: #cea84f;

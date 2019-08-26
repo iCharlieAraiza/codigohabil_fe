@@ -1,0 +1,58 @@
+.head-title{
+    background-image: radial-gradient(circle farthest-corner at -5.1% 53.5%, #ff836a 0%, #5e0094 100.2%);
+    &.blue-grad{
+        background-image: radial-gradient(circle farthest-corner at -5.1% 53.5%, #748ec8 0%, #54e4dd 100.2%);
+    }
+
+    h1,p{
+        color: #fff;
+    }
+    .logo-category{
+        display: flex;
+        align-items: center;
+        margin-right: 1rem;
+    }
+    img{
+        width: 65px;
+    }
+    .container{
+        display: flex;
+    }
+}
+
+
+
+#category, #tag{
+    .posts{
+        ul{
+            list-style: none;
+            padding-left: 0;
+        }
+        li{
+            transition: 0.1s;
+            padding: 10px;
+            border-bottom: 1px solid #d9d9d9;
+            &:hover{
+                background-color:#f0f0f0;;
+            }
+        }
+        a{
+            color: #3f3f3f;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        img{
+            width: 30px;
+            margin-right: 1rem;
+        }
+        .content-post{
+            margin-right: auto;
+        }
+        .date{
+            display: none;
+            color: #a8a8a8;
+            font-size: 14px;
+        }
+    }
+}
