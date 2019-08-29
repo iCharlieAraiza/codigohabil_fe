@@ -1,46 +1,42 @@
 import React from 'react';
 import '../components/scss/style.scss';
-import Logo from '../images/logov2.svg';
+
+import Laptop from '../images/laptop.svg'
+import Header from '../components/homepage/header'
+
+//Componentes 
+import LanguagesBlocks from '../components/homepage/languagesblocks';
+import DescriptionSection from '../components/homepage/description';
+import Footer from '../components/footer/footer'
+
+
 
 const Homepage = (props)=>{
     return (<div>{
             props.children}
-            
-            <div id="page">
-            <header>
-                <div className="navbar-section">
-                <div className="container">
-                    <div id="menu-container" className="row align-items-center">
-                            
-                            <div id="menu-btn" className="hamburger-btn">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
+            <div id="homepage">
+                
+                <Header></Header>
 
-                            <div className="logo">
-                                <img src={Logo} alt=""/>
-                            </div>
-                            
-                            <div className="content-menu">
-                                
-                                <div className="menu-elements">
+                <LanguagesBlocks></LanguagesBlocks>
 
-                                </div>
-            
-                                <div className="profile-btn">
-                                    <a href="" className="btn btn-outline-light">Iniciar Sesión</a>
-                                </div>
+                <DescriptionSection></DescriptionSection>
 
+                <section class="background-main-footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 offset-md-6">
+                                <img src={Laptop} alt=""/>
                             </div>
-                    
                         </div>
-                </div> 
-                </div>
-            </header>
-            </div>
+                    </div>
+                </section>
 
-        </div>)
+                <Footer></Footer>
+            
+            </div>
+        </div>
+        )
 }
 
 export default Homepage;
